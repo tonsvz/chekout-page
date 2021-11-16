@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --primary-font-color: #828282;
+  --secondary-font-color: #333333;
+  --btn-bg-color: #f2994a;
+  --test-color-1: red;
+  --test-color-2: blue;
+  --test-color-3: yellow;
+}
+
+h1 {
+  font-family: var(--main-font);
+}
+
+input,
+select {
+  padding: 1rem 1rem 1rem 3rem;
+  border-radius: 12px;
+  width: 465px;
+  height: 56px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  color: var(--primary-font-color);
+  font-size: 1rem;
+}
+.header-title {
+  padding: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-title h1 {
+  width: 61%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4e5150;
+}
+
+.title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 140px;
+  padding: 20px 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+  /* background-color: red; */
+}
+
+.contact-form-container,
+.shipping-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-form,
+.shipping-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* .shipping-form-container { */
+/* background-color: yellow; */
+/* } */
+
+.shipping-form-dual {
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping-form-dual input {
+  width: 223px;
+  height: 56px;
+}
+
+.shipping-form-dual-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+label {
+  margin-bottom: 10px;
+  font-family: var(--main-font);
+}
+
+.card-container {
+  display: flex;
+  margin-top: 100px;
+}
+
+.card-design {
+  width: 383px;
+  height: 534px;
+  border-radius: 12px;
+  background-color: var(--primary-font-color);
+}
+
+select {
+  width: 223px;
+  height: 56px;
+  background-color: white;
+}
+
+.shipping-form-dual label {
+  margin-left: 1px;
+}
+@media (max-width: 700px) {
+  .card-container {
+    margin-top: 0;
+  }
+}
