@@ -5,14 +5,19 @@
 }
 
 body {
-  background-color: #ffffff;
+  /* background-color: red; */
+  height: 100%;
+}
+
+main {
+  height: 88.6vh;
 }
 
 img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 :root {
@@ -33,15 +38,17 @@ input,
 select {
   padding: 1rem 1rem 1rem 3rem;
   border-radius: 12px;
-  width: 465px;
+  border: 1px solid var(--primary-font-color);
+  width: 431px;
   height: 56px;
   font-family: var(--main-font);
   font-weight: 600;
   color: var(--primary-font-color);
   font-size: 1rem;
+  margin-bottom: 10px;
 }
 .header-title {
-  padding: 56px;
+  padding: 36px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -55,21 +62,18 @@ select {
 }
 
 .title {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 22px;
-  margin-right: 140px;
-  padding: 20px 0;
+  width: 100%;
 }
 
-.content {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap-reverse;
-  gap: 2rem;
-  /* background-color: red; */
+.title h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  font-style: normal;
+  color: #333333;
+  line-height: 22px;
+  padding: 20px 0;
 }
 
 .contact-form-container,
@@ -78,14 +82,13 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .contact-form,
 .shipping-form {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.2rem;
 }
 
 /* .shipping-form-container { */
@@ -97,9 +100,10 @@ select {
   flex-direction: column;
 }
 
-.shipping-form-dual input {
-  width: 223px;
-  height: 56px;
+.shipping-form-dual input,
+select {
+  width: 207px;
+  height: 60px;
 }
 
 .shipping-form-dual-container {
@@ -109,33 +113,137 @@ select {
 }
 
 label {
-  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 12px;
   font-family: var(--main-font);
+  color: var(--secondary-font-color);
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  flex-wrap: wrap-reverse;
+  padding-inline: 250px;
+
+  /* background-color: red; */
 }
 
 .card-container {
   display: flex;
-  margin-top: 100px;
+  align-items: center;
+  /* background-color: yellow; */
 }
 
 .card-design {
   width: 383px;
-  height: 534px;
+  height: 580px;
   border-radius: 12px;
-  background-color: var(--primary-font-color);
+  background-color: #f2f2f2;
 }
 
-select {
-  width: 223px;
-  height: 56px;
-  background-color: white;
+.checkbox-input {
+  display: flex;
+  justify-content: flex-start;
 }
 
+.checkbox-input input {
+  width: unset;
+  height: unset;
+}
+
+.checkbox-input p {
+  margin-left: 10px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f4f4f;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 17px 45px;
+  background-color: #f2994a;
+  border-radius: 12px;
+  border: #f2994a;
+  color: #ffffff;
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #e88731;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transform: translateY(93px);
+}
+
+footer p {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #bdbdbd;
+  /* identical to box height */
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+}
 .shipping-form-dual label {
   margin-left: 1px;
 }
-@media (max-width: 700px) {
+
+.card-image {
+  width: 175px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.card-image img {
+  border-radius: 12px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 900px) {
   .card-container {
     margin-top: 0;
+  }
+
+  main {
+    height: 102vh;
+  }
+}
+
+@media (max-width: 1366px),
+  (max-width: 1440px),
+  (max-width: 1600px),
+  (min-width: 900px) {
+  .content {
+    padding-inline: unset;
   }
 }

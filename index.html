@@ -16,14 +16,15 @@
         <div class="form-container">
           <div class="contact-form-container">
             <div class="title">
-              <h1>Contact Information</h1>
+              <h1 class="title-contact">Contact Information</h1>
             </div>
 
             <div class="contact-form">
-              <label for="fname">E-mail</label>
+              <label for="fname">Email</label>
               <input
                 type="text"
                 name="f-email"
+                aria-required=""
                 placeholder="Enter your e-mail..."
                 id=""
               />
@@ -75,7 +76,7 @@
               <div class="shipping-form-dual">
                 <label for="f-phone">Country</label>
                 <select id="cars">
-                  <option value="volvo"></option>
+                  <option value="volvo">Your country...</option>
                   <option value="saab">Egypt</option>
                   <option value="opel">Chile</option>
                   <option value="audi">Colombia</option>
@@ -92,12 +93,32 @@
               </div>
             </div>
           </div>
+
+          <div class="checkbox-input">
+            <input type="checkbox" name="" id="" />
+            <p>Save this information for next time</p>
+          </div>
+
+          <div class="button">
+            <button class="btn">Continue</button>
+          </div>
         </div>
 
         <div class="card-container">
-          <div class="card-design"></div>
+          <div class="card-design">
+            <div class="card-image">
+              <img src="/assets/img/photo1.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
+      <footer>
+        <p>
+          created by
+          <a href="https://www.instagram.com/tonsofcode/">tonsofcode</a> -
+          devChallenges.io
+        </p>
+      </footer>
     </main>
   </body>
 </html>
