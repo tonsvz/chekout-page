@@ -36,7 +36,7 @@ h1 {
 
 input,
 select {
-  padding: 1rem 1rem 1rem 3rem;
+  padding: 1rem 1rem 1rem 1rem;
   border-radius: 12px;
   border: 1px solid var(--primary-font-color);
   width: 431px;
@@ -46,6 +46,10 @@ select {
   color: var(--primary-font-color);
   font-size: 1rem;
   margin-bottom: 10px;
+}
+
+.fa {
+  font-weight: 600 !important;
 }
 .header-title {
   padding: 36px;
